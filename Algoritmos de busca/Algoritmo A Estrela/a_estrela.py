@@ -1,5 +1,4 @@
 import pygame
-import math
 from queue import PriorityQueue
 
 # Implementação do Algoritmo A* usando um visualizador em Pygame. Há exibição do custo f de cada nó e do caminho encontrado.
