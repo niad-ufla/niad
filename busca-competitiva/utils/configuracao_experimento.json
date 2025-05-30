@@ -1,0 +1,50 @@
+{
+  "data_criacao": "2025-05-29T13:54:02.292120",
+  "versao": "1.0",
+  "algoritmos": {
+    "minimax": {
+      "implementado": false,
+      "profundidades_teste": [
+        3,
+        4,
+        5
+      ],
+      "descricao": "Algoritmo MiniMax clássico"
+    },
+    "alfa_beta": {
+      "implementado": false,
+      "profundidades_teste": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "descricao": "MiniMax com poda Alfa-Beta"
+    },
+    "expect_minimax": {
+      "implementado": false,
+      "profundidades_teste": [
+        3,
+        4
+      ],
+      "probabilidades_erro": [
+        0.1,
+        0.2
+      ],
+      "descricao": "MiniMax esperado para oponentes imperfeitos"
+    }
+  },
+  "configuracoes_teste": {
+    "partidas_por_confronto": 20,
+    "limite_jogadas": 200,
+    "timeout_por_jogada": 30.0,
+    "salvar_historicos": true
+  },
+  "metricas_avaliacao": [
+    "taxa_vitoria",
+    "tempo_medio_jogada",
+    "nos_explorados_medio",
+    "profundidade_media_alcancada",
+    "qualidade_movimentos"
+  ]
+}

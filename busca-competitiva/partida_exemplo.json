@@ -1,0 +1,444 @@
+{
+  "vencedor": "preta",
+  "numero_jogadas": 46,
+  "avaliacao_final": "-inf",
+  "pecas_restantes": {
+    "brancas": 0,
+    "pretas": 10
+  },
+  "historico_avaliacoes": [
+    "0.19999999999998722",
+    "-7.105427357601002e-15",
+    "0.5999999999999943",
+    "-4.2999999999999945",
+    "0.7999999999999979",
+    "-3.700000000000002",
+    "-3.500000000000004",
+    "-3.6999999999999984",
+    "-3.4000000000000004",
+    "-7.099999999999999",
+    "-6.999999999999997",
+    "-7.699999999999998",
+    "-3.100000000000001",
+    "-3.399999999999999",
+    "-3.200000000000001",
+    "-7.1999999999999975",
+    "-7.099999999999998",
+    "-7.099999999999995",
+    "-6.999999999999996",
+    "-7.199999999999994",
+    "-6.699999999999996",
+    "-13.399999999999991",
+    "-13.399999999999993",
+    "-13.399999999999995",
+    "-13.299999999999997",
+    "-13.499999999999998",
+    "-12.599999999999996",
+    "-17.099999999999998",
+    "-16.499999999999996",
+    "-27.599999999999994",
+    "-27.499999999999993",
+    "-27.599999999999994",
+    "-27.4",
+    "-27.5",
+    "-26.499999999999996",
+    "-31.5",
+    "-30.0",
+    "-34.800000000000004",
+    "-34.70000000000001",
+    "-34.6",
+    "-33.70000000000001",
+    "-38.5",
+    "-38.2",
+    "-38.2",
+    "-37.10000000000001",
+    "-inf"
+  ],
+  "estatisticas_jogadores": {
+    "branca": [
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 4.792213439941406e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 6) -> (4, 7)"
+      },
+      {
+        "nos_explorados": 8,
+        "tempo_execucao": 4.887580871582031e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 7) -> (3, 6)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 3.0517578125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 4) -> (3, 6) (captura: [(4, 5)])"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 3.790855407714844e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 5) -> (5, 4)"
+      },
+      {
+        "nos_explorados": 8,
+        "tempo_execucao": 3.8623809814453125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 0) -> (4, 1)"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 3.457069396972656e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 4) -> (4, 3)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 3.814697265625e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 7) -> (4, 5) (captura: [(5, 6)])"
+      },
+      {
+        "nos_explorados": 9,
+        "tempo_execucao": 3.790855407714844e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 5) -> (3, 4)"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 3.409385681152344e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(7, 4) -> (6, 5)"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 3.743171691894531e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(7, 6) -> (6, 7)"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 3.504753112792969e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 3) -> (5, 4)"
+      },
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 2.6464462280273438e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 5) -> (5, 6)"
+      },
+      {
+        "nos_explorados": 6,
+        "tempo_execucao": 2.6464462280273438e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 3) -> (3, 4)"
+      },
+      {
+        "nos_explorados": 6,
+        "tempo_execucao": 2.7894973754882812e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 6) -> (4, 5)"
+      },
+      {
+        "nos_explorados": 5,
+        "tempo_execucao": 2.5272369384765625e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(7, 2) -> (6, 3)"
+      },
+      {
+        "nos_explorados": 4,
+        "tempo_execucao": 2.1696090698242188e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(3, 4) -> (2, 5)"
+      },
+      {
+        "nos_explorados": 4,
+        "tempo_execucao": 2.288818359375e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 7) -> (5, 6)"
+      },
+      {
+        "nos_explorados": 5,
+        "tempo_execucao": 2.3126602172851562e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 5) -> (1, 4)"
+      },
+      {
+        "nos_explorados": 3,
+        "tempo_execucao": 2.0265579223632812e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 1) -> (5, 2)"
+      },
+      {
+        "nos_explorados": 3,
+        "tempo_execucao": 1.5974044799804688e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 6) -> (4, 5)"
+      },
+      {
+        "nos_explorados": 3,
+        "tempo_execucao": 1.6927719116210938e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 5) -> (3, 6)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 1.049041748046875e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(7, 0) -> (6, 1)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 1.2159347534179688e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 1) -> (5, 2)"
+      }
+    ],
+    "preta": [
+      {
+        "nos_explorados": 7,
+        "tempo_execucao": 4.76837158203125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 3) -> (3, 2)"
+      },
+      {
+        "nos_explorados": 2,
+        "tempo_execucao": 4.00543212890625e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 7) -> (4, 5) (captura: [(3, 6)])"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.956390380859375e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 5) -> (4, 7) (captura: [(3, 6)])"
+      },
+      {
+        "nos_explorados": 9,
+        "tempo_execucao": 4.100799560546875e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(1, 6) -> (2, 5)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.7418136596679688e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(3, 2) -> (5, 0) (captura: [(4, 1)])"
+      },
+      {
+        "nos_explorados": 9,
+        "tempo_execucao": 4.482269287109375e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 7) -> (5, 6)"
+      },
+      {
+        "nos_explorados": 8,
+        "tempo_execucao": 4.076957702636719e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(1, 4) -> (2, 3)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.6226043701171875e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 3) -> (4, 5) (captura: [(3, 4)])"
+      },
+      {
+        "nos_explorados": 11,
+        "tempo_execucao": 4.410743713378906e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(0, 7) -> (1, 6)"
+      },
+      {
+        "nos_explorados": 10,
+        "tempo_execucao": 6.246566772460938e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(1, 6) -> (2, 7)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.8848648071289062e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 5) -> (4, 1) (captura: [(5, 4), (5, 2)])"
+      },
+      {
+        "nos_explorados": 10,
+        "tempo_execucao": 4.00543212890625e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 5) -> (3, 6)"
+      },
+      {
+        "nos_explorados": 9,
+        "tempo_execucao": 4.124641418457031e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 1) -> (3, 2)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.765655517578125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(3, 6) -> (5, 4) (captura: [(4, 5)])"
+      },
+      {
+        "nos_explorados": 2,
+        "tempo_execucao": 3.0517578125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(5, 4) -> (7, 2) (captura: [(6, 3)]) (promoção)"
+      },
+      {
+        "nos_explorados": 13,
+        "tempo_execucao": 4.410743713378906e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(1, 0) -> (2, 1)"
+      },
+      {
+        "nos_explorados": 13,
+        "tempo_execucao": 4.696846008300781e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 1) -> (3, 0)"
+      },
+      {
+        "nos_explorados": 2,
+        "tempo_execucao": 3.1948089599609375e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(0, 3) -> (2, 5) (captura: [(1, 4)])"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.9325485229492188e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 1) -> (6, 3) (captura: [(5, 2)])"
+      },
+      {
+        "nos_explorados": 14,
+        "tempo_execucao": 4.76837158203125e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(0, 5) -> (1, 6)"
+      },
+      {
+        "nos_explorados": 2,
+        "tempo_execucao": 3.337860107421875e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(2, 7) -> (4, 5) (captura: [(3, 6)])"
+      },
+      {
+        "nos_explorados": 12,
+        "tempo_execucao": 4.935264587402344e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(4, 5) -> (5, 4)"
+      },
+      {
+        "nos_explorados": 1,
+        "tempo_execucao": 2.7894973754882812e-05,
+        "profundidade_maxima": 6,
+        "melhor_movimento": "(6, 3) -> (4, 1) (captura: [(5, 2)])"
+      }
+    ]
+  },
+  "log_eventos": [
+    "Jogada 0: Jogo iniciado",
+    "Jogada 0: Estratégia brancas: JogadorAleatorio",
+    "Jogada 0: Estratégia pretas: JogadorAleatorio",
+    "Jogada 0: branca jogou: (5, 6) -> (4, 7)",
+    "Jogada 1: preta jogou: (2, 3) -> (3, 2)",
+    "Jogada 2: branca jogou: (4, 7) -> (3, 6)",
+    "Jogada 3: preta jogou: (2, 7) -> (4, 5) (captura: [(3, 6)])",
+    "Jogada 4: branca jogou: (5, 4) -> (3, 6) (captura: [(4, 5)])",
+    "Jogada 5: preta jogou: (2, 5) -> (4, 7) (captura: [(3, 6)])",
+    "Jogada 6: branca jogou: (6, 5) -> (5, 4)",
+    "Jogada 7: preta jogou: (1, 6) -> (2, 5)",
+    "Jogada 8: branca jogou: (5, 0) -> (4, 1)",
+    "Jogada 9: preta jogou: (3, 2) -> (5, 0) (captura: [(4, 1)])",
+    "Jogada 10: branca jogou: (5, 4) -> (4, 3)",
+    "Jogada 11: preta jogou: (4, 7) -> (5, 6)",
+    "Jogada 12: branca jogou: (6, 7) -> (4, 5) (captura: [(5, 6)])",
+    "Jogada 13: preta jogou: (1, 4) -> (2, 3)",
+    "Jogada 14: branca jogou: (4, 5) -> (3, 4)",
+    "Jogada 15: preta jogou: (2, 3) -> (4, 5) (captura: [(3, 4)])",
+    "Jogada 16: branca jogou: (7, 4) -> (6, 5)",
+    "Jogada 17: preta jogou: (0, 7) -> (1, 6)",
+    "Jogada 18: branca jogou: (7, 6) -> (6, 7)",
+    "Jogada 19: preta jogou: (1, 6) -> (2, 7)",
+    "Jogada 20: branca jogou: (6, 3) -> (5, 4)",
+    "Jogada 21: preta jogou: (4, 5) -> (4, 1) (captura: [(5, 4), (5, 2)])",
+    "Jogada 22: branca jogou: (6, 5) -> (5, 6)",
+    "Jogada 23: preta jogou: (2, 5) -> (3, 6)",
+    "Jogada 24: branca jogou: (4, 3) -> (3, 4)",
+    "Jogada 25: preta jogou: (2, 1) -> (3, 2)",
+    "Jogada 26: branca jogou: (5, 6) -> (4, 5)",
+    "Jogada 27: preta jogou: (3, 6) -> (5, 4) (captura: [(4, 5)])",
+    "Jogada 28: branca jogou: (7, 2) -> (6, 3)",
+    "Jogada 29: preta jogou: (5, 4) -> (7, 2) (captura: [(6, 3)]) (promoção)",
+    "Jogada 30: branca jogou: (3, 4) -> (2, 5)",
+    "Jogada 31: preta jogou: (1, 0) -> (2, 1)",
+    "Jogada 32: branca jogou: (6, 7) -> (5, 6)",
+    "Jogada 33: preta jogou: (2, 1) -> (3, 0)",
+    "Jogada 34: branca jogou: (2, 5) -> (1, 4)",
+    "Jogada 35: preta jogou: (0, 3) -> (2, 5) (captura: [(1, 4)])",
+    "Jogada 36: branca jogou: (6, 1) -> (5, 2)",
+    "Jogada 37: preta jogou: (4, 1) -> (6, 3) (captura: [(5, 2)])",
+    "Jogada 38: branca jogou: (5, 6) -> (4, 5)",
+    "Jogada 39: preta jogou: (0, 5) -> (1, 6)",
+    "Jogada 40: branca jogou: (4, 5) -> (3, 6)",
+    "Jogada 41: preta jogou: (2, 7) -> (4, 5) (captura: [(3, 6)])",
+    "Jogada 42: branca jogou: (7, 0) -> (6, 1)",
+    "Jogada 43: preta jogou: (4, 5) -> (5, 4)",
+    "Jogada 44: branca jogou: (6, 1) -> (5, 2)",
+    "Jogada 45: preta jogou: (6, 3) -> (4, 1) (captura: [(5, 2)])",
+    "Jogada 46: Jogo finalizado"
+  ],
+  "historico_movimentos": [
+    "(5, 6) -> (4, 7)",
+    "(2, 3) -> (3, 2)",
+    "(4, 7) -> (3, 6)",
+    "(2, 7) -> (4, 5) (captura: [(3, 6)])",
+    "(5, 4) -> (3, 6) (captura: [(4, 5)])",
+    "(2, 5) -> (4, 7) (captura: [(3, 6)])",
+    "(6, 5) -> (5, 4)",
+    "(1, 6) -> (2, 5)",
+    "(5, 0) -> (4, 1)",
+    "(3, 2) -> (5, 0) (captura: [(4, 1)])",
+    "(5, 4) -> (4, 3)",
+    "(4, 7) -> (5, 6)",
+    "(6, 7) -> (4, 5) (captura: [(5, 6)])",
+    "(1, 4) -> (2, 3)",
+    "(4, 5) -> (3, 4)",
+    "(2, 3) -> (4, 5) (captura: [(3, 4)])",
+    "(7, 4) -> (6, 5)",
+    "(0, 7) -> (1, 6)",
+    "(7, 6) -> (6, 7)",
+    "(1, 6) -> (2, 7)",
+    "(6, 3) -> (5, 4)",
+    "(4, 5) -> (4, 1) (captura: [(5, 4), (5, 2)])",
+    "(6, 5) -> (5, 6)",
+    "(2, 5) -> (3, 6)",
+    "(4, 3) -> (3, 4)",
+    "(2, 1) -> (3, 2)",
+    "(5, 6) -> (4, 5)",
+    "(3, 6) -> (5, 4) (captura: [(4, 5)])",
+    "(7, 2) -> (6, 3)",
+    "(5, 4) -> (7, 2) (captura: [(6, 3)]) (promoção)",
+    "(3, 4) -> (2, 5)",
+    "(1, 0) -> (2, 1)",
+    "(6, 7) -> (5, 6)",
+    "(2, 1) -> (3, 0)",
+    "(2, 5) -> (1, 4)",
+    "(0, 3) -> (2, 5) (captura: [(1, 4)])",
+    "(6, 1) -> (5, 2)",
+    "(4, 1) -> (6, 3) (captura: [(5, 2)])",
+    "(5, 6) -> (4, 5)",
+    "(0, 5) -> (1, 6)",
+    "(4, 5) -> (3, 6)",
+    "(2, 7) -> (4, 5) (captura: [(3, 6)])",
+    "(7, 0) -> (6, 1)",
+    "(4, 5) -> (5, 4)",
+    "(6, 1) -> (5, 2)",
+    "(6, 3) -> (4, 1) (captura: [(5, 2)])"
+  ],
+  "data_partida": "2025-05-29T14:37:27.025441",
+  "estrategias": {
+    "brancas": "JogadorAleatorio",
+    "pretas": "JogadorAleatorio"
+  }
+}
