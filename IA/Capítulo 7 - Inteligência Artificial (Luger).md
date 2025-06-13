@@ -24,7 +24,7 @@ Teorias associacionistas estão bastante ligadas às áreas da linguística e da
 #### Rede semântica
 Uma rede semântica representa o conhecimento como um grafo, com os nós que correspondem a fatos ou conceitos e os arcos como relações ou associações entre conceitos. Tanto os nós como os arcos são normalmente rotulados.
 
-O termo “rede semântica” abrange uma família de representações baseadas cm grafos. Essas representações diferem, sobretudo, nos nomes que podem ser usados para os nós e arcos e nas inferências que podem vir dessas estruturas.
+O termo “rede semântica” abrange uma família de representações baseadas em grafos. Essas representações diferem, sobretudo, nos nomes que podem ser usados para os nós e arcos e nas inferências que podem vir dessas estruturas.
 
 Um programa muito influente, que ilustra muitas das características das redes semânticas iniciais, foi escrito por Quillian no final dos anos 1960. Esse programa definia as palavras em inglês de forma semelhante aos dicionários: uma palavra é definida em termos de outras palavras e os componentes da definição são definidos da mes­ma forma.
 
@@ -101,7 +101,47 @@ Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural t
     2. **Viabilidade:** Críticos questionaram se a redução à forma canônica é computacionalmente viável para a complexidade da linguagem natural.
     3. **Limitação das Primitivas:** As primitivas podem ser simples demais para capturar conceitos mais sutis e abstratos (ex: a ambiguidade de um adjetivo como "alto").
 
-Apesar das críticas, a Teoria da Dependência Conceitual foi extremamente influente, gerando pesquisas importantes em áreas como **roteiros (scripts)**, que descrevem sequências de eventos em contextos específicos, e **MOPs (Memory Organization Packets)**, que foram fundamentais para o desenvolvimento do **raciocínio baseado em casos**.
+Apesar das críticas, a Teoria da Dependência Conceitual, assim como os Roteiros (que veremos a seguir), foi extremamente influente, gerando pesquisas importantes em áreas como **roteiros (scripts)**, que descrevem sequências de eventos em contextos específicos, e **MOPs (Memory Organization Packets)**, que foram fundamentais para o desenvolvimento do **raciocínio baseado em casos**.
+
+### Roteiros
+Um roteiro é uma representação estruturada que descreve uma sequência estereotipada de eventos em um contexto particular. O modelo de roteiro foi originalmente concebido por Schank e seu grupo de pesquisa (Schank e Abelson, 1977) como um meio de organizar estruturas de dependência conceitual formando descrições de situações típicas. Os roteiros são usados em sistemas de compreensão de linguagem natural para organizar uma base de conhecimento em termos das situações que o sistema deve compreender.
+
+A ideia central se baseia na evidência de que os humanos organizam seu conhecimento em estruturas que correspondem a situações do dia a dia. Ao ler uma história sobre um restaurante, ativamos nosso "roteiro de restaurante" para interpretar ambiguidades e preencher informações que não foram ditas. Por exemplo, os roteiros para um restaurante tradicional e para um _fast-food_ são diferentes, e ativamos o correto para entender a sequência de eventos (pedir antes de pagar vs. pagar antes de comer).
+
+Um roteiro é definido pelos seguintes componentes:
+
+- **Condições de Entrada:** Fatos que devem ser verdadeiros para o roteiro ser ativado.
+    - _Exemplo (Restaurante):_ O cliente (S) está com fome; o cliente (S) tem dinheiro.
+- **Resultados:** Fatos que se tornam verdadeiros após a conclusão do roteiro.
+    - _Exemplo (Restaurante):_ O cliente (S) não está mais com fome; o cliente (S) tem menos dinheiro; o proprietário (P) tem mais dinheiro.
+- **Acessórios (_Props_):** Os objetos que compõem o cenário.
+    - _Exemplo (Restaurante):_ Mesas, cardápio, comida, conta.
+- **Papéis (_Roles_):** Os participantes e suas funções na história.
+    - _Exemplo (Restaurante):_ Cliente (S), Garçom (W), Cozinheiro (C), Caixa (M).
+- **Cenas (_Scenes_):** A sequência temporal de eventos que compõem o roteiro.
+    - _Exemplo (Restaurante):_ Cena 1: Entrando; Cena 2: Pedindo; Cena 3: Comendo; Cena 4: Saindo.  
+
+![Exemplo de dependência conceitual (Figura 7.11)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/exemplo_roteiro.png)
+
+#### Funcionamento e Poder de Inferência
+
+O poder dos roteiros reside em sua capacidade de permitir que um sistema faça **inferências de senso comum**. Quando um programa lê uma história, ele a converte para uma representação de dependência conceitual. Se essa representação corresponder às condições de entrada de um roteiro, o roteiro é ativado.
+
+O sistema então "preenche" os detalhes da história usando o roteiro como guia. Por exemplo, na história:
+
+> "John foi a um restaurante ontem à noite. Ele pediu um bife. Quando pagou a conta, percebeu que não tinha mais dinheiro."
+
+O roteiro permite inferir que **John comeu o bife**, mesmo que isso não tenha sido dito, pois a cena "Comendo" está entre as cenas "Pedindo" e "Saindo". Ele também ajuda a resolver ambiguidades em pronomes, associando-os aos papéis corretos (ex: "ela" pediu um sanduíche se refere à cliente, e não à garçonete).
+
+#### Limitações dos Roteiros
+
+Apesar de úteis, os roteiros possuem limitações significativas devido à sua rigidez:
+
+1. **Problema do Casamento de Roteiros:** Ocorre quando uma história contém palavras-chave que podem ativar múltiplos roteiros, tornando a escolha difícil. No exemplo "John visitou seu restaurante favorito a caminho do concerto. Ele estava contente por ter conseguido um lugar", a palavra "lugar" é ambígua: refere-se a uma mesa no restaurante ou a uma poltrona no teatro? A escolha incorreta do roteiro levaria a inferências erradas.
+
+2. **Problema das Entrelinhas:** É impossível prever todos os eventos que podem interromper uma sequência padrão. No exemplo "Melissa jantava quando um pedaço de reboco caiu do teto", o roteiro do restaurante não tem informações sobre como lidar com esse evento inesperado, tornando a representação inflexível.
+
+Essas limitações, especialmente a inflexibilidade, motivaram o desenvolvimento de estruturas mais dinâmicas, como os **Pacotes de Organização de Memória (MOPs)**, que combinam componentes menores de conhecimento de forma mais adaptável à situação.
 
 ---
 
