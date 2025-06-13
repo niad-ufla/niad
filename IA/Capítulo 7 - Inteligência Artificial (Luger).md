@@ -1,5 +1,6 @@
 # Tópicos principais
 • Base de conhecimento
+
 • Linguagens de representação
 
 ## Derivações
@@ -49,6 +50,59 @@ Embora o trabalho inicial de Quillian tenha estabelecido a maioria das caracter�
 
 #### Voltando a redes semânticas...
 Muito do trabalho em representações por redes que se seguiu ao de Quillian se concentrou na definição de um conjunto mais rico de rótulos dos elos (relacionamentos) que pudesse modelar mais completamente a semântica da linguagem natural. Ao implementar os relacionamentos semânticos fundamentais da linguagem natural como parte do formalismo, em vez de ser parte do conhecimento do domínio acrescentado pelo construtor do sistema, as bases de conhecimento deixam de ser tão artesanais e alcançam maior generalidade.
+
+##### **Trabalho de Simmons (1973): Quadros de Caso**
+Uma das primeiras abordagens para criar relacionamentos padronizados foi a de Simmons, que focou na estrutura de casos dos verbos. A ideia, baseada em trabalhos anteriores do linguista Charles Fillmore, é que os verbos definem "quadros de caso" (`case frames`), e os elos da rede representam os papéis que os substantivos desempenham na ação.
+
+- **Relacionamentos de Caso:** Incluem papéis como `agente` (quem faz a ação), `objeto` (o que sofre a ação), `instrumento` (o que é usado para a ação), `localização` e `tempo`.
+- **Funcionamento:** Ao analisar uma frase como "Sarah consertou a cadeira com cola", o sistema identifica o verbo ("consertou") e ativa seu quadro de caso. Em seguida, preenche os papéis: Sarah é o `agente`, cadeira é o `objeto` e cola é o `instrumento`.
+  
+![Exemplo de quadro de caso (Figura 7.5)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/simmons_sarah.png)
+
+Essa abordagem incorpora a estrutura profunda da linguagem diretamente no formalismo da rede, permitindo que o sistema compreenda as relações semânticas de forma independente da sentença exata que foi usada.
+
+##### **Teoria da Dependência Conceitual (Roger Schank)**
+Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural tenha sido a Teoria da Dependência Conceitual de Roger Schank. O objetivo era criar um conjunto completo de "primitivas" para representar o significado de qualquer frase de forma inequívoca.
+
+- **Componentes Primitivos:** A teoria propõe que todo significado é construído a partir de quatro tipos de conceitos:
+    - **ATOs:** Ações primitivas.
+    - **PFs:** Objetos (do inglês, _Picture Producers_).
+    - **AAs:** Modificadores de ações.
+    - **AFs:** Modificadores de objetos.
+
+- **Ações Primitivas (ATOs):** Schank postulou que todas as ações humanas podem ser decompostas em um ou mais elementos desse pequeno conjunto de cerca de 12 ações básicas, como:
+    - `ATRANS`: Transferir um relacionamento abstrato (ex: dar).
+    - `PTRANS`: Transferir a localização física de um objeto (ex: ir).
+    - `PROPEL`: Aplicar força a um objeto (ex: empurrar).
+    - `INGERIR`: Ingerir um objeto (ex: comer).
+    - `MTRANS`: Transferir informação mental (ex: contar).
+    - `MBUILD`: Construir nova informação mental (ex: decidir).
+
+- Por fim, pode ser adicionada ao conjunto de conceitualizações a informação de tempo e de modo verbais. Uma lista parcial deles está logo abaixo:
+	- `p`: Passado.
+	- `f`: Futuro.
+	- `t`: Transição.
+	- `p`: Passado.
+	- `ti`: Transição inicial.
+	- `?`: Interrogativo.
+	- `tf`: Transição final.
+	- `c`: Condicional.
+	- `/`: Negativo.
+	- `nil`: Presente.
+	- `delta?`: Atemporal.
+
+- **Gramática Semântica:** A teoria define um conjunto de **regras de dependência conceitual** que funcionam como uma gramática para o significado, descrevendo como os conceitos se relacionam (ex: a relação entre agente e verbo, ou entre verbo e objeto).
+  
+![Exemplo de dependência conceitual (Figura 7.8)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/exemplos_dependencia_conceitual.png)
+
+- **Benefícios e Forma Canônica:** O principal benefício buscado era a **forma canônica**. Isso significa que todas as sentenças com o mesmo significado (ex: "Maria deu um livro para João" e "João recebeu um livro de Maria") seriam reduzidas a um único e idêntico grafo de dependência conceitual. Isso simplificaria enormemente as tarefas de inferência e compreensão.
+
+- **Críticas e Legado:** Apesar de sua influência, a teoria foi criticada por diversos motivos:
+    1. **Custo Computacional:** Reduzir todas as sentenças a primitivas de baixo nível é um processo caro.
+    2. **Viabilidade:** Críticos questionaram se a redução à forma canônica é computacionalmente viável para a complexidade da linguagem natural.
+    3. **Limitação das Primitivas:** As primitivas podem ser simples demais para capturar conceitos mais sutis e abstratos (ex: a ambiguidade de um adjetivo como "alto").
+
+Apesar das críticas, a Teoria da Dependência Conceitual foi extremamente influente, gerando pesquisas importantes em áreas como **roteiros (scripts)**, que descrevem sequências de eventos em contextos específicos, e **MOPs (Memory Organization Packets)**, que foram fundamentais para o desenvolvimento do **raciocínio baseado em casos**.
 
 ---
 
