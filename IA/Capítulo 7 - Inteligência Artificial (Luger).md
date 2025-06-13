@@ -82,7 +82,6 @@ Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural t
 	- `p`: Passado.
 	- `f`: Futuro.
 	- `t`: Transição.
-	- `p`: Passado.
 	- `ti`: Transição inicial.
 	- `?`: Interrogativo.
 	- `tf`: Transição final.
