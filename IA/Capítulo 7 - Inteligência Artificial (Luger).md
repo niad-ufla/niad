@@ -3,9 +3,6 @@
 
 • Linguagens de representação
 
-## Derivações
-• Teorias associacionistas (exemplo: rede semântica com grafos)
-
 ## Definições
 Abaixo, seguem definições dos termos mais importantes tratados nos tópicos acima.
 
@@ -21,7 +18,9 @@ As teorias associacionistas definem o significado de um objeto em termos de uma 
 
 Teorias associacionistas estão bastante ligadas às áreas da linguística e da psicologia. Muitos estudos que tentam entender a estrutura do raciocínio/entendimento humano partem dessas áreas, e a nossa área (IA) se aproveita bastante disso.
 
-#### Rede semântica
+---
+
+### Rede semântica
 Uma rede semântica representa o conhecimento como um grafo, com os nós que correspondem a fatos ou conceitos e os arcos como relações ou associações entre conceitos. Tanto os nós como os arcos são normalmente rotulados.
 
 O termo “rede semântica” abrange uma família de representações baseadas em grafos. Essas representações diferem, sobretudo, nos nomes que podem ser usados para os nós e arcos e nas inferências que podem vir dessas estruturas.
@@ -60,6 +59,8 @@ Uma das primeiras abordagens para criar relacionamentos padronizados foi a de Si
 ![Exemplo de quadro de caso (Figura 7.5)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/simmons_sarah.png)
 
 Essa abordagem incorpora a estrutura profunda da linguagem diretamente no formalismo da rede, permitindo que o sistema compreenda as relações semânticas de forma independente da sentença exata que foi usada.
+
+---
 
 ### Dependência Conceitual
 Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural tenha sido a Teoria da Dependência Conceitual de Roger Schank. O objetivo era criar um conjunto completo de "primitivas" para representar o significado de qualquer frase de forma inequívoca.
