@@ -61,7 +61,7 @@ Uma das primeiras abordagens para criar relacionamentos padronizados foi a de Si
 
 Essa abordagem incorpora a estrutura profunda da linguagem diretamente no formalismo da rede, permitindo que o sistema compreenda as relações semânticas de forma independente da sentença exata que foi usada.
 
-##### **Teoria da Dependência Conceitual (Roger Schank)**
+### Dependência Conceitual
 Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural tenha sido a Teoria da Dependência Conceitual de Roger Schank. O objetivo era criar um conjunto completo de "primitivas" para representar o significado de qualquer frase de forma inequívoca.
 
 - **Componentes Primitivos:** A teoria propõe que todo significado é construído a partir de quatro tipos de conceitos:
