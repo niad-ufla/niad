@@ -103,7 +103,7 @@ Talvez a tentativa mais ambiciosa de modelar a semântica da linguagem natural t
 
 Apesar das críticas, a Teoria da Dependência Conceitual, assim como os Roteiros (que veremos a seguir), foi extremamente influente, gerando pesquisas importantes em áreas como **roteiros (scripts)**, que descrevem sequências de eventos em contextos específicos, e **MOPs (Memory Organization Packets)**, que foram fundamentais para o desenvolvimento do **raciocínio baseado em casos**.
 
-### Roteiros
+### Roteiros (_Scripts_)
 Um roteiro é uma representação estruturada que descreve uma sequência estereotipada de eventos em um contexto particular. O modelo de roteiro foi originalmente concebido por Schank e seu grupo de pesquisa (Schank e Abelson, 1977) como um meio de organizar estruturas de dependência conceitual formando descrições de situações típicas. Os roteiros são usados em sistemas de compreensão de linguagem natural para organizar uma base de conhecimento em termos das situações que o sistema deve compreender.
 
 A ideia central se baseia na evidência de que os humanos organizam seu conhecimento em estruturas que correspondem a situações do dia a dia. Ao ler uma história sobre um restaurante, ativamos nosso "roteiro de restaurante" para interpretar ambiguidades e preencher informações que não foram ditas. Por exemplo, os roteiros para um restaurante tradicional e para um _fast-food_ são diferentes, e ativamos o correto para entender a sequência de eventos (pedir antes de pagar vs. pagar antes de comer).
@@ -142,6 +142,38 @@ Apesar de úteis, os roteiros possuem limitações significativas devido à sua 
 2. **Problema das Entrelinhas:** É impossível prever todos os eventos que podem interromper uma sequência padrão. No exemplo "Melissa jantava quando um pedaço de reboco caiu do teto", o roteiro do restaurante não tem informações sobre como lidar com esse evento inesperado, tornando a representação inflexível.
 
 Essas limitações, especialmente a inflexibilidade, motivaram o desenvolvimento de estruturas mais dinâmicas, como os **Pacotes de Organização de Memória (MOPs)**, que combinam componentes menores de conhecimento de forma mais adaptável à situação.
+
+### Quadros (_Frames_)
+
+Outro esquema representacional importante, introduzido por Marvin Minsky em 1975, são os **quadros** (_frames_). Um quadro é uma estrutura de dados que representa uma situação ou objeto estereotipado, funcionando como um "arcabouço" mental que recuperamos da memória e adaptamos a novas situações preenchendo seus detalhes.
+
+A ideia é similar à dos roteiros, mas enquanto os roteiros focam em sequências de eventos, os quadros se concentram na descrição de objetos e suas propriedades. O exemplo clássico é o de um **quarto de hotel**: não precisamos reconstruir nosso entendimento para cada novo quarto. Já temos um quadro mental com expectativas (cama, banheiro, telefone) e valores padrão (lençóis limpos, toalhas). Ao entrar em um quarto específico, apenas preenchemos os detalhes que faltam (a cor das cortinas, a localização dos interruptores).
+
+#### Estrutura de um Quadro
+
+Um quadro organiza o conhecimento em uma única entidade complexa, dividida em **partições** (_slots_), que são análogas aos campos de um registro ou aos atributos de um objeto. Cada partição pode conter diferentes tipos de informação:
+
+- **Relações com outros quadros:** Define a hierarquia. Por exemplo, um quadro `Cadeira de Hotel` pode ser uma `especialização de` um quadro `Cadeira` genérico.
+- **Requisitos:** Condições que um objeto deve satisfazer para se encaixar no quadro (ex: a altura do assento de uma cadeira).
+- **Informação Procedimental (_Demons_):** Uma característica poderosa é a capacidade de vincular procedimentos (código) a partições. Um _**demon**_ é uma rotina ativada como efeito colateral de uma ação na base de conhecimento (ex: realizar uma verificação de consistência sempre que o valor de uma partição for alterado).
+- **Valores Padrão (_Defaults_):** Informações assumidas como verdadeiras na ausência de evidência contrária (ex: uma cadeira tem 4 pernas). Isso permite o raciocínio não monotônico, pois as suposições podem ser corrigidas posteriormente.
+- **Informação da Instância:** Partições deixadas em branco para serem preenchidas com os dados de uma instância específica do quadro (ex: a cor da colcha de uma cama em particular).
+
+![Exemplo de quadro - hotel (Figura 7.12)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/exemplo_quadro.png)
+
+#### Principais Características e Vantagens
+
+Os quadros estendem o poder das redes semânticas de várias maneiras:
+
+1. **Organização Hierárquica:** Superam as redes semânticas ao agrupar o conhecimento sobre um objeto complexo em uma única unidade, em vez de uma coleção "plana" de nós e arcos. Isso torna a estrutura da base de conhecimento mais clara e natural.
+2. **Herança:** Sistemas de quadros suportam herança de classes. Uma subclasse herda as partições e os valores padrão de sua superclasse, permitindo a reutilização de conhecimento e a criação de especializações. Um `Telefone de Hotel` herda as propriedades de um `Telefone`, mas adiciona ou modifica partições (como `tarifação: por quarto`).
+3. **Raciocínio com Valores Padrão:** Os quadros são eficazes para fazer suposições inteligentes. Minsky usou o exemplo de reconhecer um cubo a partir de diferentes perspectivas: um sistema de quadros pode inferir a existência das faces ocultas como valores padrão, reconhecendo que as diferentes vistas representam o mesmo objeto.
+
+![Exemplo de quadro espacial - cubo (Figura 7.13)](https://github.com/niad-ufla/niad/blob/main/IA/Imagens/exemplo_quadro_espacial.png)
+
+#### Legado e Influência
+
+A pesquisa em quadros teve um impacto profundo e duradouro na ciência da computação. Ela é considerada a precursora direta da **programação orientada a objetos (POO)**. Conceitos como classes, objetos, atributos, herança e encapsulamento, que são centrais em linguagens como **Smalltalk, C++, e Java**, têm suas raízes diretamente na teoria dos quadros.
 
 ---
 
