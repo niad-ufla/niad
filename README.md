@@ -130,3 +130,9 @@ https://www.youtube.com/watch?v=FnfSClp_Uno&list=PLxI8Can9yAHfzI1njXYuMrtKcN5aLl
 #### Inglês	
 
 https://www.youtube.com/watch?v=ok5PaRPltcM&list=PLxI8Can9yAHeYb4-3dXwiY2Z9VdqhnqpM
+
+### Cursos Gratuitos
+
+#### Aplicações de Redes Neurais Artificiais
+
+https://sites.google.com/ufla.br/denilsonpereira/home/courses/aplicacoes-de-redes-neurais-artificiais
